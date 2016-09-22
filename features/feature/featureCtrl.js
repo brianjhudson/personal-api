@@ -29,6 +29,10 @@ module.exports = {
   setName(req, res) {
     me.name.name = req.body;
     return res.status(200).json(me.name);
+  },
+  setLocation(req, res) {
+    me.location.location = req.body;
+    return res.status(200).json(me.location);
   }
 }
 
