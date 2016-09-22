@@ -33,7 +33,12 @@ module.exports = {
   setLocation(req, res) {
     me.location.location = req.body;
     return res.status(200).json(me.location);
+  },
+  addHobby(req, res) {
+    me.hobbies.hobbies.push(req.body);
+    return res.status(200).json(me.hobbies);
   }
+
 }
 
 const me = {

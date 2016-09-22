@@ -9,4 +9,5 @@ module.exports = app => {
   app.get("/api/hobbies/:type", featureCtrl.getHobbyByType);
   app.put("/api/name", featureCtrl.setName);
   app.put("/api/location", featureCtrl.setLocation);
+  app.post("/api/hobbies", featureCtrl.addHobby);
 }
