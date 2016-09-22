@@ -16,7 +16,7 @@ module.exports = {
     return res.status(200).json(me.hobbies);
   },
   getHobbyByType(req, res) {
-
+    return res.status(200).json(me.hobbies.hobbies.filter(hobby => req.params.type === hobby.type))
   }
 }
 
