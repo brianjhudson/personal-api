@@ -1,5 +1,20 @@
 module.exports = {
-  getFunc(req, res) {
-    
+  getName(req, res) {
+        
+  },
+  getLocation(req, res) {
+
+  },
+  getOccupations(req, res) {
+
+  },
+  getLatestOccupation(req, res) {
+
+  },
+  getHobbies(req, res) {
+
+  },
+  getHobbyByType(req, res) {
+
   }
 }
