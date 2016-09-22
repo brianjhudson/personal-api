@@ -37,6 +37,10 @@ module.exports = {
   addHobby(req, res) {
     me.hobbies.hobbies.push(req.body);
     return res.status(200).json(me.hobbies);
+  },
+  addOccupation(req, res) {
+    me.occupations.occupations.push(req.body.occupation);
+    return res.status(200).json(me.occupations);
   }
 
 }

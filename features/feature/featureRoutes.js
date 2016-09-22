@@ -10,4 +10,5 @@ module.exports = app => {
   app.put("/api/name", featureCtrl.setName);
   app.put("/api/location", featureCtrl.setLocation);
   app.post("/api/hobbies", featureCtrl.addHobby);
+  app.post("/api/occupations", featureCtrl.addOccupation);
 }
