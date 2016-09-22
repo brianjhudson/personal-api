@@ -13,7 +13,7 @@ module.exports = {
     return res.status(200).json(latestOccupation);
   },
   getHobbies(req, res) {
-
+    return res.status(200).json(me.hobbies);
   },
   getHobbyByType(req, res) {
 
