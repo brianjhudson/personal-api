@@ -6,10 +6,11 @@ module.exports = {
     return res.status(200).json(me.location);
   },
   getOccupations(req, res) {
-
+    return res.status(200).json(me.occupations);
   },
   getLatestOccupation(req, res) {
-
+    // let latestOccupation = me.occupations.occupations[me.occupation.occupations.length-1];
+    // return res.status(200).json(latestOccupation]);
   },
   getHobbies(req, res) {
 
@@ -22,7 +23,7 @@ module.exports = {
 const me = {
   name: {"name": "Brian Hudson"},
   location: {"location": "Dallas"},
-  occupation: {"occupations": ["Retail Sales Clerk", "Legal Assistant", "Teacher"]},
+  occupations: {"occupations": ["Retail Sales Clerk", "Legal Assistant", "Teacher"]},
   hobbies: {"hobbies": [
     {"name": "Reading", "type": "current"},
     {"name": "Traveling", "type": "past"},
