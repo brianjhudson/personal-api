@@ -9,8 +9,8 @@ module.exports = {
     return res.status(200).json(me.occupations);
   },
   getLatestOccupation(req, res) {
-    // let latestOccupation = me.occupations.occupations[me.occupation.occupations.length-1];
-    // return res.status(200).json(latestOccupation]);
+    let latestOccupation = me.occupations.occupations[me.occupations.occupations.length-1];
+    return res.status(200).json(latestOccupation);
   },
   getHobbies(req, res) {
 
