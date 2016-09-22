@@ -3,7 +3,7 @@ module.exports = {
     return res.status(200).json(me.name)
   },
   getLocation(req, res) {
-
+    return res.status(200).json(me.location);
   },
   getOccupations(req, res) {
 
