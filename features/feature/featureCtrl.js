@@ -6,7 +6,15 @@ module.exports = {
     return res.status(200).json(me.location);
   },
   getOccupations(req, res) {
+    console.log("Main Occupations");
     return res.status(200).json(me.occupations);
+  },
+  getSortedOccupations(req, res) {
+    console.log("Sorted Occupations");
+    let sortedList = [];
+    if (req.query.order === "asc") sortedList = me.occupations.occupations.sort();
+    else if (req.query.order === "desc") sortedList = me.occupations.occupations.reverse();
+    return res.status(200).json({"occupations": sortedList});
   },
   getLatestOccupation(req, res) {
     let latestOccupation = me.occupations.occupations[me.occupations.occupations.length-1];
