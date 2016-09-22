@@ -25,6 +25,10 @@ module.exports = {
   },
   getHobbyByType(req, res) {
     return res.status(200).json(me.hobbies.hobbies.filter(hobby => req.params.type === hobby.type))
+  },
+  setName(req, res) {
+    me.name.name = req.body;
+    return res.status(200).json(me.name);
   }
 }
 

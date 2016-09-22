@@ -7,4 +7,6 @@ module.exports = app => {
   app.get("/api/occupations", featureCtrl.getOccupations);
   app.get("/api/hobbies", featureCtrl.getHobbies);
   app.get("/api/hobbies/:type", featureCtrl.getHobbyByType);
+  app.put("/api/name", featureCtrl.setName);
+  app.put("/api/location", featureCtrl.setLocation);
 }
