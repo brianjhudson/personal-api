@@ -10,5 +10,11 @@ module.exports = {
       'Content-Security-Policy': "default-src 'self' devmountain.github.io"
     });
     next();
+  },
+
+  generateId(req, res, next) {
+    req.body.id = featureCtrl.me.skills.skills.length + 1;
+    next();
   }
+
 }
